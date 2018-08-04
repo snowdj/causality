@@ -12,7 +12,7 @@ I'm interested in causal modelling; having read Judea Pearl's [The Book of Why: 
 
 To get started, install the packages as specified in the `environment.yml` conda specification file.
 
-```bash
+```
 $ conda env create -f environment.yml
 ```
 
@@ -27,8 +27,8 @@ There are two options for running the notebooks. The first one is the simplest: 
 
 The second way assumes you've cloned the repository locally, or have downloaded and unzipped it from GitHub. In your terminal (or command prompt), run the following commands:
 
-```bash
-$ source activate causality  # assumes you have already created environment
+```
+$ source activate causality
 $ jupyter lab
 ```
 
