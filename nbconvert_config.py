@@ -103,10 +103,13 @@ c.NbConvertApp.notebooks = ['notebooks/*.ipynb']
 
 # List of preprocessors available by default, by name, namespace,  instance,
 # or type.
-c.Exporter.default_preprocessors = ['nbconvert.preprocessors.ExecutePreprocessor']
-# 'nbconvert.preprocessors.coalesce_streams', 'nbconvert.preprocessors.SVG2PDFPreprocessor', 'nbconvert.preprocessors.CSSHTMLHeaderPreprocessor',
-# 'nbconvert.preprocessors.LatexPreprocessor', 'nbconvert.preprocessors.HighlightMagicsPreprocessor',
-# 'nbconvert.preprocessors.ExtractOutputPreprocessor'
+c.Exporter.default_preprocessors = ['nbconvert.preprocessors.ExecutePreprocessor',
+                                    'nbconvert.preprocessors.coalesce_streams',
+                                    'nbconvert.preprocessors.SVG2PDFPreprocessor',
+                                    'nbconvert.preprocessors.CSSHTMLHeaderPreprocessor',
+                                    'nbconvert.preprocessors.LatexPreprocessor',
+                                    'nbconvert.preprocessors.HighlightMagicsPreprocessor',
+                                    'nbconvert.preprocessors.ExtractOutputPreprocessor']
 
 ## Extension of the file that should be written to disk
 #c.Exporter.file_extension = '.txt'
