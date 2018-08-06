@@ -25,11 +25,11 @@ install:
 script:
   # Create the docs directory. This is where we will be publishing from
   # (see the "deploy" section below).
-  - mkdir -p docs
+  - mkdir -p docs/notebooks
   # All notebooks that need to be converted are inside nbconvert_config.py
   # We have to call on --execute - without doing so, the execution config
   # inside nbconvert_config.py won't run.
-  - jupyter nbconvert --config nbconvert_config.py --execute
+  - jupyter nbconvert --config nbconvert_config.py --execute --template full
   # Build the index page.
   - pandoc -s README.md -o docs/index.html
 
