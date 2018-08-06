@@ -30,13 +30,17 @@ script:
   # Build the index page.
   - pandoc -s README.md -o docs/index.html
 
+# This is an example to deploy to a branch through Travis.
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep-history: true
+  # We read the master branch
   on:
     branch: master
+  # Take the docs/ directory
   local-dir: docs
+  # Publish to the gh-pages branch
   target-branch: gh-pages
   verbose: true
