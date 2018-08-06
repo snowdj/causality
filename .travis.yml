@@ -23,7 +23,8 @@ install:
   - python -m ipykernel install --user --name causality
 
 script:
-  # Create the docs directory
+  # Create the docs directory. This is where we will be publishing from
+  # (see the "deploy" section below).
   - mkdir -p docs
   # All notebooks that need to be converted are inside nbconvert_config.py
   # We have to call on --execute - without doing so, the execution config
