@@ -26,6 +26,8 @@ script:
   # Create the docs directory
   - mkdir -p docs
   # All notebooks that need to be converted are inside nbconvert_config.py
+  # We have to call on --execute - without doing so, the execution config
+  # inside nbconvert_config.py won't run.
   - jupyter nbconvert --config nbconvert_config.py --execute
   # Build the index page.
   - pandoc -s README.md -o docs/index.html
