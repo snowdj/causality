@@ -438,7 +438,7 @@ c.ExecutePreprocessor.timeout = 600
 ## Directory to write output(s) to. Defaults to output to the directory of each
 #  notebook. To recover previous default behaviour (outputting to the current
 #  working directory) use . as the flag value.
-c.FilesWriter.build_directory = 'docs'
+c.FilesWriter.build_directory = 'docs/notebooks'
 
 ## When copying files that the notebook depends on, copy them in relation to this
 #  path, such that the destination filename will be os.path.relpath(filename,
