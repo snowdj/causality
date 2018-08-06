@@ -8,6 +8,14 @@ I'm interested in causal modelling; having read Judea Pearl's [The Book of Why: 
 
 # getting started
 
+## static html
+
+View the notebooks I've created as static HTML notebooks:
+
+1. [linear simulation](notebooks/01-causality-linear-simulation.html)
+1. [instrument variables](notebooks/02-instrument-variables.html)
+1. [d-separation](notebooks/03-d-separation.html)
+
 ## installation
 
 To get started, install the packages as specified in the `environment.yml` conda specification file.
