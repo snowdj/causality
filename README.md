@@ -2,6 +2,9 @@
 pagetitle: ericmjl/causality
 ---
 
+![](https://travis-ci.org/ericmjl/causality.svg?branch=master)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/ericmjl/causality/master)
+
 # causality
 
 A small repo in which I play with the ideas of causal modelling.
