@@ -27,6 +27,8 @@ script:
   - mkdir -p docs
   # All notebooks that need to be converted are inside nbconvert_config.py
   - jupyter nbconvert --config nbconvert_config.py --execute
+  # Build the index page.
+  - pandoc -s README.md -o docs/index.html
 
 deploy:
   provider: pages
