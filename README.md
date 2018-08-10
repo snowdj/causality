@@ -22,6 +22,7 @@ View the notebooks I've created as static HTML notebooks. These links below are 
 1. [linear simulation](notebooks/01-causality-linear-simulation.html)
 1. [instrument variables](notebooks/02-instrument-variables.html)
 1. [d-separation](notebooks/03-d-separation.html)
+1. [finding confounding set](notebooks/04-finding-confounding-set.html)
 
 If you want to view the notebooks on GitHub directly, head over to the [notebooks](./notebooks/) directory.
 
