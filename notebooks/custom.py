@@ -23,17 +23,17 @@ def rule1(n, S, G, path):
     """
     Tells us if a node in the graph G satisfies
     blocking rule 1 in the causal path provided.
-    
+
     Blocking rule 1 is:
-    
+
         -> n ->
-        
+
     This is topologically equivalent to:
-    
+
         <- n <-
-        
+
     Where n is a member of S.
-    
+
     :param n: A node in graph G.
     :param S: The conditioning node set.
     :param G: A NetworkX graph.
@@ -45,17 +45,18 @@ def rule1(n, S, G, path):
     has_out_edges = len(list(G_sub.out_edges(n))) == 1
     return in_conditioning_set and has_in_edges and has_out_edges
 
+
 def rule2(n, S, G, path):
     """
     Tells us if a node in the graph G satisfies
     blocking rule 2 in the causal path provided.
-    
+
     Blocking rule 2 is:
-    
+
         <- n ->
-        
+
     Where n is a member of S.
-    
+
     :param n: A node in graph G.
     :param S: The conditioning node set.
     :param G: A NetworkX graph.
@@ -66,22 +67,23 @@ def rule2(n, S, G, path):
     has_out_edges = len(list(G_sub.out_edges(n))) == 2
     return in_conditioning_set and has_out_edges
 
+
 def rule3(n, S, G, path):
     """
     Tells us if a node in the graph G satisfies
     blocking rule 3 in the causal path provided.
-    
+
     Blocking rule 3 is as such:
-    
+
     If n is a collider:
-    
+
         -> n <-
-        
+
     Then it is a blocker, otherwise it is not a blocker.
-    
+
     However, if n is a member of S, or n has a descendant
     that is a member of S, then it is not a blocker.
-        
+
     :param n: A node in graph G.
     :param S: The conditioning node set.
     :param G: A NetworkX graph.
@@ -94,7 +96,7 @@ def rule3(n, S, G, path):
 
     is_blocker = is_collider
 
-    # We then check to see if the 
+    # We then check to see if the
     if n in S or descendant_in_S:
         is_blocker = False
     return is_blocker
@@ -103,9 +105,9 @@ def rule3(n, S, G, path):
 def path_nodes(G: nx.DiGraph, path: list):
     """
     Returns the causal path as indicated by the path. 
-    
+
     Does not include the other edges, as would G.subgraph do.
-    
+
     :param G: A NetworkX directed graph.
     :param path: A list of nodes denoting an undirected path.
     """
