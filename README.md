@@ -17,11 +17,15 @@ I'm interested in causal modelling; having read Judea Pearl's [The Book of Why: 
 
 ## static html
 
-View the notebooks I've created as static HTML notebooks:
+View the notebooks I've created as static HTML notebooks. These links below are intended to be clicked on when viewing from [the github page](https://ericmjl.github.io/causality).
 
 1. [linear simulation](notebooks/01-causality-linear-simulation.html)
 1. [instrument variables](notebooks/02-instrument-variables.html)
 1. [d-separation](notebooks/03-d-separation.html)
+1. [finding confounding set](notebooks/04-finding-confounding-set.html)
+1. [collider effect](notebooks/05-collider-effect.html)
+
+If you want to view the notebooks on GitHub directly, head over to the [notebooks](./notebooks/) directory.
 
 ## installation
 

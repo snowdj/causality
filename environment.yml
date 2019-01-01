@@ -7,9 +7,11 @@ dependencies:
 - python=3.6
 - jupyter
 - jupyterlab
+- jupyter_contrib_nbextensions
 - matplotlib
 - numpy
 - pandas
 - seaborn
 - statsmodels
 - networkx
+- pytest
